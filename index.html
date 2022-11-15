@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Quiz App With Timer</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- info -->
+    <div class="box">
+      <div class="start_btn"><button>Start Quiz</button></div>
+      <div class="info">
+        <div class="info-title">
+          <span><b>Coding Quiz Challenge</b></span>
+        </div>
+        <div class="info-box">
+          <div class="info">
+            Try to answer the code-related questions within the time limit. Keep
+            in mind that incorrect answers will penalize your scoretime by 10
+            seconds.<br /><br />
+          </div>
+        </div>
+      </div>
+
+      <!--Quiz -->
+
+      <header>
+        <div class="title">Quiz App</div>
+        <div class="timer">
+          <div class="time_left_txt">Time Left</div>
+          <div class="timer_sec">60</div>
+          <br />
+        </div>
+        <div class="time_line"></div>
+      </header>
+      <section class="questions hide">
+        <div class="que_text"></div>
+        <div class="option_list"></div>
+      </section>
+
+      <!-- Result-->
+      <div class="results hide">
+        <div class="icon">
+          <i class=""></i>
+        </div>
+        <div class="complete_text">You've completed the Quiz!</div>
+        <div class="score_text"></div>
+      </div>
+    </div>
+  </body>
+  <footer>
+    <br /><br />
+    <div class="finish hide">
+      <h1>Your score is: <span class="final-score"> </span> /60</h1>
+
+      <input class="name-input" placeholder="YourNameHere" />
+      <button class="submit-btn">Get Results!</button>
+      <h1>High Scores</h1>
+      <ol class="score-list"></ol>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</html>
